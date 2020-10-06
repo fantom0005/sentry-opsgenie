@@ -57,12 +57,6 @@ class OpsGeniePlugin(CorePluginMixin, notify.NotificationPlugin):
     feature_descriptions = [
         FeatureDescription(
             """
-            Manage incidents and outages by sending Sentry notifications to OpsGenie.
-            """,
-            IntegrationFeatures.INCIDENT_MANAGEMENT,
-        ),
-        FeatureDescription(
-            """
             Configure Sentry rules to trigger notifications based on conditions you set.
             """,
             IntegrationFeatures.ALERT_RULE,
